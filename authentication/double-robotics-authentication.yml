@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.doublerobotics.com/developer.html
+docs: https://www.doublerobotics.com/developer.html
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  notes: >-
+    Double Robotics has no published OpenAPI, so this profile is derived from
+    the public developer documentation rather than a machine-readable spec.
+schemes:
+- name: FleetApiKey
+  type: apiKey
+  in: header
+  applies_to: Fleet REST API
+  description: >-
+    The Fleet REST API is authenticated with API keys issued through the Fleet
+    Management account portal (drive.doublerobotics.com). Keys authorize access
+    to fleet-management data — robots, users, call logs, and visitor passes.
+  source: https://www.doublerobotics.com/developer.html
+- name: LocalSocket
+  type: none
+  applies_to: Double 3 SDK
+  description: >-
+    The Double 3 SDK is a LOCAL command/event API reached over a Unix domain
+    socket on the robot itself; access is gated by putting the device into
+    developer mode rather than by a network credential. No network token is
+    exchanged for the on-device socket.
+  source: https://github.com/doublerobotics/d3-sdk/blob/master/docs/Communication.md
