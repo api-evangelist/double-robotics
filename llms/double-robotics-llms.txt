@@ -1,0 +1,34 @@
+# Double Robotics
+
+> Double Robotics builds telepresence robots for hybrid work and education — the self-driving Double 3 videoconferencing robot and the earlier iPad-based Double 2. Its developer surface spans the on-device Double 3 SDK (a JSON command/event API over a Unix domain socket), iOS SDKs for the Double 2, and a Fleet REST API for fleet-management data.
+
+## APIs
+
+- [Double 3 SDK](https://github.com/doublerobotics/d3-sdk): Local command/event API (v1.3.1) over a Unix domain socket; ~25 categories including base, navigate, ptz, camera, depth, webrtc, network, system, events.
+- [Fleet REST API](https://www.doublerobotics.com/developer.html): REST access to robots, users, call logs, and visitor passes; API-key authenticated via the Fleet Management portal.
+
+## Docs
+
+- [Developer Program](https://www.doublerobotics.com/developer.html): Overview of the D3 SDK, iOS SDKs, and Fleet REST API.
+- [D3 API Reference](https://github.com/doublerobotics/d3-sdk/blob/master/docs/API.md): All commands and events.
+- [Communication](https://github.com/doublerobotics/d3-sdk/blob/master/docs/Communication.md): Command/event JSON packet structure over the Unix domain socket.
+- [Cameras](https://github.com/doublerobotics/d3-sdk/blob/master/docs/Cameras.md): Accessing the on-board cameras.
+- [Click-to-Drive](https://github.com/doublerobotics/d3-sdk/blob/master/docs/Click-to-Drive.md): Waypoint navigation.
+
+## SDKs
+
+- [d3-sdk](https://github.com/doublerobotics/d3-sdk): Node.js and Python examples for the Double 3 platform.
+- [Basic-Control-SDK-iOS](https://github.com/doublerobotics/Basic-Control-SDK-iOS): iOS driving controls for the Double 2 (Apache-2.0).
+- [Camera-Kit-SDK](https://github.com/doublerobotics/Camera-Kit-SDK): iOS Camera Kit for the Double 2.
+
+## Optional
+
+- [GitHub Organization](https://github.com/doublerobotics)
+- [Fleet Management Portal](https://drive.doublerobotics.com/)
+- [Privacy Policy](https://www.doublerobotics.com/privacy.html)
+
+## API Evangelist artifacts
+
+- [Packages](https://raw.githubusercontent.com/api-evangelist/double-robotics/refs/heads/main/packages/double-robotics-packages.yml)
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/double-robotics/refs/heads/main/authentication/double-robotics-authentication.yml)
+- [Domain Security](https://raw.githubusercontent.com/api-evangelist/double-robotics/refs/heads/main/security/double-robotics-domain-security.yml)

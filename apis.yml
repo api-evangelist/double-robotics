@@ -1,8 +1,29 @@
 aid: double-robotics
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/double-robotics.png
 name: Double Robotics
-description: Double Robotics is a company surfaced as a portfolio company of a16z, y-combinator and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Double Robotics builds telepresence robots for hybrid work and education,
+  best known for the self-driving Double 3 videoconferencing robot and the
+  earlier iPad-based Double 2. Its developer program spans three surfaces: the
+  Double 3 SDK (a local command-and-event API exposed over a Unix domain socket
+  on the robot, covering base movement, navigation, PTZ cameras, depth sensors,
+  WebRTC calling, and standby/sidebar apps), iOS SDKs for the Double 2 (Basic
+  Control and Camera Kit), and a Fleet REST API for programmatic access to
+  fleet-management data such as robots, users, call logs, and visitor passes.
+  Added to the API Evangelist network from VC-portfolio discovery and enriched
+  against the company's public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/double-robotics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,12 +34,65 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Telepresence
+- Robotics
+- Videoconferencing
+- Hybrid Work
+- SDK
+- Fleet Management
+- Hardware
+apis:
+- name: Double 3 SDK
+  description: >-
+    Local developer API for the Double 3 telepresence robot. Commands and events
+    are exchanged as JSON packets over a standard Unix domain socket with the
+    core D3 system service (Ubuntu 18.04, aarch64). API v1.3.1 groups
+    functionality into ~25 categories including base, navigate, ptz, camera,
+    depth, webrtc, network, system, and events (subscribe-based). A web Monitor
+    at http://YOUR_D3_IP:8080 lets developers test commands before coding.
+  humanURL: https://github.com/doublerobotics/d3-sdk
+  properties:
+  - type: Documentation
+    url: https://github.com/doublerobotics/d3-sdk/blob/master/docs/API.md
+  - type: SourceCode
+    url: https://github.com/doublerobotics/d3-sdk
+- name: Fleet REST API
+  description: >-
+    REST API for Double fleet management data — robots, users, call logs, and
+    visitor passes. API keys and reference documentation are issued through the
+    Fleet Management account portal.
+  humanURL: https://www.doublerobotics.com/developer.html
+common:
+- type: DeveloperPortal
+  url: https://www.doublerobotics.com/developer.html
+- type: Documentation
+  url: https://github.com/doublerobotics/d3-sdk/blob/master/docs/API.md
+- type: GitHubOrganization
+  url: https://github.com/doublerobotics
+- type: Login
+  url: https://drive.doublerobotics.com/
+- type: PrivacyPolicy
+  url: https://www.doublerobotics.com/privacy.html
+- type: Packages
+  url: packages/double-robotics-packages.yml
+- type: SDKs
+  url: packages/double-robotics-packages.yml
+- type: Authentication
+  url: authentication/double-robotics-authentication.yml
+- type: DomainSecurity
+  url: security/double-robotics-domain-security.yml
+- type: LLMsTxt
+  url: llms/double-robotics-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

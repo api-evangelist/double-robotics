@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+host: https://www.doublerobotics.com
+notes: >-
+  Probed the standard /.well-known/ discovery surface on the primary website and
+  the Fleet Management portal host. No document returned 200; absence recorded as
+  valid data. No raw files saved.
+documents:
+- path: /.well-known/security.txt
+  host: https://www.doublerobotics.com
+  status: 404
+- path: /.well-known/openid-configuration
+  host: https://www.doublerobotics.com
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  host: https://www.doublerobotics.com
+  status: 404
+- path: /.well-known/api-catalog
+  host: https://www.doublerobotics.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: https://www.doublerobotics.com
+  status: 404
+- path: /.well-known/openid-configuration
+  host: https://drive.doublerobotics.com
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  host: https://drive.doublerobotics.com
+  status: 403

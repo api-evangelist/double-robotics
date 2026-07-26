@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.doublerobotics.com/developer.html
+notes: >-
+  Double Robotics distributes its client SDKs as source on GitHub rather than
+  via language package registries (npm/PyPI/Maven/etc.). No first-party
+  registry package was found on npm, PyPI, Maven Central, NuGet, pkg.go.dev,
+  RubyGems, Packagist, or crates.io. The entries below are the official
+  source-distributed SDKs.
+packages:
+- language: multi
+  registry: github
+  name: d3-sdk
+  url: https://github.com/doublerobotics/d3-sdk
+  install: git clone https://github.com/doublerobotics/d3-sdk
+  description: >-
+    Developer SDK for the Double 3 telepresence robot platform. Command/event
+    JSON API over a Unix domain socket; examples in Node.js, Python, and for
+    standby/sidebar/WebRTC apps.
+  official: true
+- language: objective-c
+  registry: github
+  name: Basic-Control-SDK-iOS
+  url: https://github.com/doublerobotics/Basic-Control-SDK-iOS
+  install: git clone https://github.com/doublerobotics/Basic-Control-SDK-iOS
+  license: Apache-2.0
+  description: >-
+    iOS SDK providing access to basic driving controls for the Double 2 from a
+    custom iOS application.
+  official: true
+- language: objective-c
+  registry: github
+  name: Camera-Kit-SDK
+  url: https://github.com/doublerobotics/Camera-Kit-SDK
+  install: git clone https://github.com/doublerobotics/Camera-Kit-SDK
+  description: >-
+    iOS Camera Kit SDK for the Double 2 telepresence robot.
+  official: true
