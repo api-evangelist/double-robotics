@@ -66,6 +66,8 @@ apis:
     Fleet Management account portal.
   humanURL: https://www.doublerobotics.com/developer.html
 common:
+- type: IssueTracker
+  url: https://github.com/doublerobotics/d3-sdk/issues
 - type: DeveloperPortal
   url: https://www.doublerobotics.com/developer.html
 - type: Documentation
